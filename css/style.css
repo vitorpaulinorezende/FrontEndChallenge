@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+:root {
+    --very-dark-magenta: hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 80%, 67%);
+    --dark-grayish-magenta: hsl(303, 10%, 53%);
+    --light-grayish-magenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: 'Spartan', sans-serif;
+}
+
+html, body {
+    height: 100vh;
+}
+
+.bg-bottom {
+    background: url("../social-proof-section-master/social-proof-section-master/images/bg-pattern-bottom-desktop.svg");
+}
+
+.right {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.left {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+
+.main {
+    padding: 20px;
+}
+
+.main .content {
+    padding: 50px 95px;
+}
+
+.main .content .main-header {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.main .content .main-header .header-title {
+    max-width: 350px;
+    color: var(--dark-grayish-magenta);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.main .content .main-header .header-title h1 {
+    color: var(--very-dark-magenta);
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.main .content .main-header .stars {
+    display: flex;
+    flex-direction: column;
+}
+
+.main .content .main-header .stars .star-container {
+    background: var(--light-grayish-magenta);
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 13px;
+    position: relative;
+}
+
+.main .content .main-header .stars .star-container p {
+    margin-left: 10px;
+    font-weight: 700;
+    font-size: 12px;
+    color: var(--very-dark-magenta);
+}
+
+.main .content .main-header .stars .star-container figure {
+    display: flex;
+    flex-direction: row;
+}
+
+.main .content .main-header .stars .star-container.first {
+    left: -40px;
+}
+
+.main .content .main-header .stars .star-container.second {
+    left: 40px;
+}
+
+.main .content .main-header .stars .star-container.third {
+    left: 80px;
+}
+
+.main .content .cards {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.main .content .cards .card {
+    background: var(--very-dark-magenta);
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin-left: 10px;
+    position: relative;
+}
+
+.main .content .cards .card .card-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.main .content .cards .card .card-header .card-person-informations {
+    display: flex;
+    flex-direction: column;
+    color: var(--white);
+    padding-left: 20px;
+}
+
+.main .content .cards .card .card-header .card-person-informations .card-person-name {
+    font-weight: 500;
+}
+
+.main .content .cards .card .card-header .card-person-informations .card-person-status {
+    color: var(--soft-pink);
+}
+
+.main .content .cards .card .card-header img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.main .content .cards .card .card-content {
+    margin-top: 20px;
+    color: var(--white);
+}
+
+.main .content .cards .card.second {
+    top: 20px;
+}
+.main .content .cards .card.third {
+    top: 40px;
+}
+
+@media (max-width: 575px) {
+    .main {
+        padding: 20px;
+    }
+    
+    .main .content {
+        padding: 30px 0px;
+    }
+
+    .main .content .main-header {
+        flex-direction: column;
+    }
+
+    .main .content .main-header .stars .star-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .right {
+        align-items: center;
+    }
+    .left {
+        align-items: center;
+    }
+    
+    .main .content .main-header .stars .star-container.second {
+        left: 0;
+    }
+    
+    .main .content .main-header .stars .star-container.third {
+        left: 0;
+    }
+
+    .main .content .main-header .stars .star-container figure {
+        margin-bottom: 10px;
+    }
+
+    .main .content .cards {
+        flex-direction: column;
+    }
+}
